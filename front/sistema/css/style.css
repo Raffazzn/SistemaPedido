@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#user-logout{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main{
+        background-color: #E9EBF2;
+}
+body{
+    font-family: Inter;
+    background-color: #E9EBF2;
+    width: 100%;
+    height: 100vh;
+}
+
+/* -------------------------------------------------------------------------- */
+
+header{
+    background-color: #0D1D48;
+    display: flex;
+    padding: 1em 0;
+}
+menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+menu a {
+text-decoration: none;
+}
+
+header li img {
+    width: 25px;
+}
+
+li{
+    list-style: none;
+}
+
+.espaco{
+   width: 80em;
+   padding: 2em 0 2em 26em;
+}
+
+/* ---------------------------------------------------------------- */
+
+main{
+    padding: 2em;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    margin-bottom: 20px;
+    /* background-color: aquamarine; */
+}
+
+#frm-home{
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+#frm-contato{
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+#frm-produto{
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+#frm-produtoClasse{
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+#frm-pedido{
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+#frm-relatorio{
+    width: auto;
+    height: auto;
+    display: none;
+}

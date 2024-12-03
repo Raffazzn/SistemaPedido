@@ -1,0 +1,26 @@
+.separar2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cadastrados{
+    width: 40%;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3em;
+}
+
+.option{
+    width: 40em;
+    height: 3em;
+}
+
+.cadastro1{
+    background-color: #869CC8;
+    padding: 2em;
+    border-radius: 2em;
+}

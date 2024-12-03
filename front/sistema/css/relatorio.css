@@ -1,0 +1,42 @@
+.form-container-relatorio-header{
+    width: 100%;
+}
+
+.form-container-relatorio-options{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    background-color: #FBC662;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.form-container-relatorio-option{
+    width: 100%;
+    display: flex;
+}
+.form-container-relatorio-options label{
+    width: 50em;
+    height: 1em;
+    cursor: pointer;
+}
+.form-container-relatorio-options input{
+    width: 2em;
+    cursor: pointer;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FBC662;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form-container-relatorio-header button{
+    margin-top: 1em;
+}
+
+.separar{
+    max-width: 350px;
+}

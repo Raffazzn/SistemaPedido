@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   
+
+    <form action="#" id="frm-login">
+        <fieldset>
+            <legend>Já tem Cadastro</legend>
+            <label for="email">E-mail</label>
+            <input type="text" id="login-email" required autofocus>
+            <label for="login-password">Senha</label>
+            <input type="password" id="login-password" required>
+            <div class="actions">
+                <input type="reset" value="Apagar" class="btn btn-apagar">
+                <input type="submit" value="Entrar" class="btn">
+            </div>
+            <p id="msg-login"></p>
+        </fieldset>
+    </form>
+
+    <form action="#" id="frm-cadastrar">
+        <fieldset>
+            <legend>Fazer Cadastro</legend>
+            <label for="userName">Nome</label>
+            <input type="text" id="userName" required>
+            <label for="userEmail">Email</label>
+            <input type="text" id="userEmail" required>
+            <label for="cad-password">Senha</label>
+            <input type="password" id="cad-password" required>
+            <div class="actions">
+                <input type="reset" value="Apagar" class="btn btn-apagar">
+                <input type="submit" value="Cadastrar" class="btn">
+            </div>
+            <p id="msg-cadastro"></p>
+        </fieldset>
+    </form>
+
+    <script src="./js/user.js"></script>
+</body>
+</html>

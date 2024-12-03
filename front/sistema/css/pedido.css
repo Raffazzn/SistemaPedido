@@ -1,0 +1,172 @@
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fffcf5;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Define um tamanho máximo para a tabela de itens do pedido no modal */
+.modal .itens-pedido-container {
+    max-height: 20em; /* Define a altura máxima desejada */
+    overflow-y: auto;  /* Adiciona rolagem vertical quando ultrapassar a altura */
+    margin-bottom: 1em;
+}
+
+/* Ajusta as colunas da tabela */
+.modal table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pedido{
+    display: flex;
+}
+
+.modal table th,
+.modal table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #aec8fa;
+}
+
+.pedido-header{
+    display: flex;
+    gap: 1em;
+    background-color: #fada9e;
+    padding: 0.5em;
+    margin-top: 1em;
+    border-radius: 0.5em;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container-btn-salvar-pedido{
+    width: 80%;
+    display: flex;
+}
+
+.input-container-produto-group{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    background-color: #fada9e;
+    padding: .5em;
+    
+    border-radius: 0.5em;
+}
+.input-container-produto-descricao{
+    width: 80%;
+}
+.input-container-produto-qtde{
+    width: 20%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal input, .modal select  {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button#btn-add-produto{
+    margin-top: 0.5em;
+}
+
+.btn-add-produto-pedido{
+    background-color: #123456;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 0.5em;
+    margin-left: auto;
+}
+
+.btn-add-produto-pedido:hover{
+    background-color: #000123;
+}
+
+button#btn-salvar-pedido{
+    background-color: #123456;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 0.5em;
+    margin-left: auto;
+}
+
+button#btn-salvar-pedido:hover {
+    background-color: #000123;
+}
+
+.form-container2{
+display: flex;
+justify-content: flex-end;
+}
+
+.button-incluir{
+    height: 5em;
+    width: 5em;
+    border-radius: 5em;
+    background-image: url(/front/sistema/img-produto/adicionar\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    padding: 2em;
+    background-color: aliceblue;
+    position: relative;
+    margin-top: 30%;
+}
+
+.button-incluir:hover{
+    background-color: #00012352;
+}
+
+.scbc{
+    width: 75%;
+    position: relative;
+    margin-left: 8em;
+}
+
+.table1{
+    border-top-left-radius: 0.5em;
+}
+
+.table2{
+border-top-right-radius: 0.5em;
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "contaInst": "bancoBrasil",
+    "contaTipo": "item",
+    "descricao": "Conta de Estudante",
+    "cpf": 1234567891011,
+    "nome": "Conta da Nathália"
+  },
+  {
+    "contaInst": "bradesco",
+    "contaTipo": "item",
+    "descricao": "Conta de Estudante",
+    "cpf": 1234567891011,
+    "nome": "Conta do Vinicius"
+  },
+  {
+    "contaInst": "itau",
+    "contaTipo": "corrente",
+    "descricao": "Conta de Professor",
+    "cpf": 1234567891011,
+    "nome": "Conta do Mário"
+  },
+  {
+    "contaInst": "bancoBrasil",
+    "contaTipo": "poupanca",
+    "descricao": "mesada",
+    "cpf": 7777777777777,
+    "nome": "vinicius"
+  },
+  {
+    "contaInst": "bancoBrasil",
+    "contaTipo": "poupanca",
+    "descricao": "ff",
+    "cpf": 77888,
+    "nome": "dd"
+  }
+]

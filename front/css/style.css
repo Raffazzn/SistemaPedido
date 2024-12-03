@@ -1,0 +1,82 @@
+html{
+    background-color: #95a5a6;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 0;
+    height: 100vh;
+    background-color: #E9EBF2;
+}
+
+form{
+    width: 25em;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 1em;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: .25em;
+}
+
+input{
+    padding: .75em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+    border: 1px solid #bbb;
+}
+
+legend{
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: #454e4f;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+.actions{
+    display: flex;
+    gap: 1em;
+}
+
+.btn{
+    background-color: rgb(43, 43, 128);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-apagar{
+    background-color: rgb(128, 43, 56);
+}
+
+.msg-sucesso{
+    color: #31eb3e;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.msg-error{
+    color: #ea1e6c;
+    font-size: 1.5em;
+    text-align: center;
+}

@@ -1,0 +1,117 @@
+.sua-conta{
+    display: flex;
+    margin-bottom: 2.5em;
+}
+
+.conta2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5em;
+    
+}
+
+.container-dashboard{
+    display: flex;  
+    gap: 20px;
+}
+
+.card-dashboard-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card-dashboard{
+    width: 15em;
+    height: 6em;
+    background-color: rgb(210, 210, 210);
+    background-color: #FBC662;
+    border-radius: 1.8em;
+}
+
+.card-dashboard h2{
+    font-size: 1.5em;
+    color: black;
+    font-weight: normal;
+    font-size: 1em;
+    margin-left: 1em;   
+    margin-top: 0.5em;
+}
+
+.card-dashboard p{
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 0.5em;
+    padding: 0 1em;
+}
+
+.y{
+    margin-left: 4em;
+}
+
+.imgp{
+    display: flex;
+}
+
+.classeamarela{
+    background-color: #FBC662;
+    border-radius: 1em;
+    width: 58em;
+    height: 16em;
+    margin: 0 15em;
+}
+
+.classeroxa{
+    background-color: #869CC8;
+    border-radius: 1em;
+    width: 58em;
+    height: 16em;
+    margin: 5em 15em;
+}
+
+.doisamarelo{
+    text-align: center;
+    margin-top: 3em;
+}
+
+.dois{
+    margin-left: 1em;
+    font-family: Inter;
+}
+
+.um{
+    text-align: center;
+    padding: 1em;
+    font-family: inter;
+}
+
+.texto{
+    font-family: inter;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.botao{
+    height: 2em;
+    width: 10em;
+    background-color: #FBC662;
+    margin: auto;
+    border-radius: 2em;
+    text-align: center;
+    font-weight: 500;
+    padding: 0.2em;
+}
+
+a{
+    text-decoration: none;
+    color: #0D1D48;
+}
+
+.img-amarelo{
+    display: flex;
+}
+
+.img-amarelo img{
+    margin-top: 0.6em;
+    margin-left: 5em;
+}

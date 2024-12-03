@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/forms.css">
+    <link rel="stylesheet" href="./css/pedido.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/relatorio.css">
+    <link rel="stylesheet" href="./css/cadCont.css">
+
+    <!-- link fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="img porco" src="img/Ellipse_3-removebg-preview.png" alt="logo">
+        </div>
+        <div class="espaco">
+            <menu>
+                <li><a href="#home" onclick="showSection('frm-home', getHome())"><img src="img/casa (3) (1).png"
+                            alt=""></a></li>
+                <li><a href="#pedido" onclick="showSection('frm-pedido', getPedidos())"><img
+                            src="img/verificacao-de-lista (3) (1) copy.png" alt=""></a></li>
+                <li><a href="#produtoClasse" onclick="showSection('frm-produtoClasse', getProdutoClasses())"><img
+                            src="img/box-open.png" alt=""></a></li>
+                <li><a href="#contas" onclick="showSection('frm-contas', getContas())"><img
+                            src="img/banco (1) (1).png" alt=""></a></li>
+                <li><a href="#relatorio" onclick="showSection('frm-relatorio')"><img
+                            src="img/grafico-histograma (1) (1).png" alt=""></a></li>
+            </menu>
+        </div>
+    </header>
+
+    <main>
+        <div class="sua-conta">
+            <img src="./img-home/Rectangle 5.png" alt="">
+            <div class="conta2">
+                <p id="user-name"></p>
+                <p id="user-logout">Sair</p>
+            </div>
+
+        </div>
+
+        <section id="frm-home">
+            <div class="container-dashboard">
+                <br><br>
+                <div class="form-container card-dashboard-container">
+                    <div class="card-dashboard x">
+                        <h2>Saldo atual ></h2>
+                        <p id="card-pedido">XX - XXX</p>
+                    </div>
+                    <div class="card-dashboard y">
+                        <h2>Receitas ></h2>
+                        <p id="card-contato">XX</p>
+                    </div>
+                    <div class="card-dashboard x">
+                        <h2>Despesas ></h2>
+                        <p id="card-produto">XX</p>
+                    </div>
+                    <div class="card-dashboard y">
+                        <h2>Cartão de Crédito ></h2>
+                        <p id="card-classificacao">XX</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="classeamarela">
+                        <div class="dois">
+                            <div class="um">
+                                <h3>Objetivos</h3>
+                            </div>
+                            <div class="texto">
+                            <p><img src="./img-home/png-clipart-check-mark-computer-icons-correct-miscellaneous-angle-removebg-preview (1).png"
+                                    alt="">Cadastre uma conta bancária</p>
+                                    <br>
+                            <p><img src="./img-home/png-clipart-check-mark-computer-icons-correct-miscellaneous-angle-removebg-preview (1).png"
+                                    alt="">Cadastre um cartão de crédito</p>
+                                    <br>
+                            <p><img src="./img-home/png-clipart-check-mark-computer-icons-correct-miscellaneous-angle-removebg-preview (1).png"
+                                    alt="">Complete seu cadastro</p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="classeroxa">
+                        <div class="doisamarelo">
+                            <div class="um">
+                                <h3>Balanço mensal</h3>
+                            </div>
+                            <div class="texto">
+                            <p>Opa! Você ainda não possui transações cadastradas em seu balanço mensal.</p><br>
+                            <p>Que tal começar adicionando suas despesas e receitas este mês?</p>
+                            </div>
+                            <br>
+                            <a href="#relatorio" onclick="showSection('frm-relatorio')"><div class="botao">Comece agora</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="frm-pedido">
+            <div class="pedido">
+            <div class="container-dashboard">
+                <br><br>
+                <div class="form-container card-dashboard-container">
+                    <div class="card-dashboard x">
+                        <h2>Saldo atual ></h2>
+                        <p id="card-pedido-pedido">XX - XXX</p>
+                    </div>
+                    <div class="card-dashboard y">
+                        <h2>Receitas ></h2>
+                        <p id="card-contato-pedido">XX</p>
+                    </div>
+                    <div class="card-dashboard x">
+                        <h2>Despesas ></h2>
+                        <p id="card-produto-pedido">XX</p>
+                    </div>
+                    <div class="card-dashboard y">
+                        <h2>Cartão de Crédito ></h2>
+                        <p id="card-classificacao-pedido">XX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scbc">
+                <h1>Cadastro de Tranferências</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table1">Valor Tranferido</th>
+                            <th>Data e horário</th>
+                            <th>Conta</th>
+                            <th>Valor Total</th>
+                            <th class="table2">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-pedido">
+                    </tbody>
+                </table>
+                <br><br>
+                <div class="form-container2">
+                    <button class="button-incluir" id="btn-incluir-pedido" ></button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="frm-produtoClasse">
+            <div class="container">
+                <h1>Categorização de Contas</h1>
+                <div class="form-container">
+                    <input type="text" id="descricaoProdutoClasse" placeholder="Descrição">
+                    <select class="option"  id="tipoLancamento">
+                        <option value="item" disabled selected>Ação da conta
+                        </option>
+                        <option value="corrente">Receita</option>
+                        <option value="poupanca">Despesa</option>
+                    </select>
+                    <input type="hidden" id="descricaoAnteriorProdutoClasse">
+                    <button id="btn-salvar-produtoClasse">Salvar</button>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-produtoClasse">
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <section id="frm-contas">
+            <div class="container">
+
+                <div class="separar2">
+                <div class="cadastro1">
+                    <h1>Cadastro de Contas</h1>
+                        <div class="cadastro">
+                            <select class="option"  id="instituiçãoFinanceira"> 
+                                <option value="" disabled selected>Qual é a instituição financeira da conta que você quer adicionar?
+                                </option>
+                                <option value="bancoBrasil">Banco do Brasil</option>
+                                <option value="bradesco">Bradesco</option>
+                                <option value="caixaEconomica">Caixa Econômica</option>
+                                <option value="itau">Itaú</option>
+                                <option value="santander">Santander</option>
+                                <option value="inter">Banco Inter</option>
+                                <option value="nubank">Nubank</option>
+                            </select>
+                            <select class="option" id="tipoConta">
+                                <option value="" disabled selected>Qual o tipo da conta adicionada?</option>
+                                <option value="corrente">Conta corrente</option>
+                                <option value="poupanca">Conta poupança</option>
+                            </select>
+                            <input class="option" type="text" id="nomeConta" placeholder="Nome da conta">
+                            <input class="option" type="text" id="cpfUsuario" placeholder="CPF">
+                            <input class="option" type="text" id="descricaoConta" placeholder="Descrição">
+                            <button class="option" id="btn-salvar-contas">Salvar</button>
+                        </div>
+                </div>
+
+                <div class="cadastrados">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Instituição</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                            <th>CPF</th>
+                            <th>Nome</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-contas">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+        </section>
+
+       
+
+        <section id="frm-relatorio">
+            <div class="container">
+                <h1>Relatórios e Análises Gerenciais</h1>
+
+                <h3>Selecionar o tipo de relatório:</h2>
+                    <div class="form-container">
+                        <div class="form-container-relatorio-header">
+                            <div class="form-container-relatorio-options">
+                                <div class="separar">
+                                    <div class="form-container-relatorio-option">
+                                        <label for="venda-geral">Vendas Geral</label>
+                                        <input [type="radio"] : checked name="tipo-relatorio" id="venda-geral">
+                                    </div>
+                                    <div class="form-container-relatorio-option">
+                                        <label for="venda-usuario">Vendas por Usuário</label>
+                                        <input [type="radio"] : checked name="tipo-relatorio" id="venda-usuario">
+                                    </div>
+                                    <div class="form-container-relatorio-option">
+                                        <label for="venda-contato">Vendas por Contato</label>
+                                        <input [type="radio"] : checked name="tipo-relatorio" id="venda-contato">
+                                    </div>
+                                </div>
+                                <div class="separar">
+                                <div class="form-container-relatorio-option">
+                                    <label for="venda-localidade">Vendas por Localidade</label>
+                                    <input [type="radio"] : checked name="tipo-relatorio" id="venda-localidade">
+                                </div>
+                                <div class="form-container-relatorio-option">
+                                    <label for="venda-produto">Vendas por Produto</label>
+                                    <input [type="radio"] : checked name="tipo-relatorio" id="venda-produto">
+                                </div>
+                                <div class="form-container-relatorio-option">
+                                    <label for="venda-classificacao">Vendas por Classificação de Produto</label>
+                                    <input [type="radio"] : checked name="tipo-relatorio" id="venda-classificacao">
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="btn-gerar-relatorio">
+                            <button type="button" id="btn-gerar-relatorio">Gerar Relatório</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table>
+                        <thead id="tabela-relatorio-header">
+                        </thead>
+                        <tbody id="tabela-relatorio">
+                        </tbody>
+                        <tfoot id="tabela-relatorio-footer">
+                        </tfoot>
+                    </table>
+            </div>,
+
+        </section>
+
+
+    </main>
+
+    <!-- Modal para cadastro de pedidos -->
+    <div id="modal-pedido" class="modal">
+        <div class="modal-content">
+            <span class="close" id="fechar-modal">&times;</span>
+            <h2 id="stRegistroPedido">Novo Pedido</h2>
+
+            <form id="form-pedido">
+                <div class="input-container-btn-salvar-pedido">
+                    <button type="submit" id="btn-salvar-pedido">Salvar Pedido</button>
+                </div>
+
+                <div class="pedido-header">
+                    <div class="input-container">
+                        <label for="dataPedido">Data:</label>
+                        <input type="text" id="dataPedido" readonly>
+                        <input type="hidden" id="numeroPedido">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="usuarioPedido">Usuário:</label>
+                        <input type="text" id="usuarioPedido" readonly>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="valorTotalPedido">Valor Total:</label>
+                        <input type="text" id="valorTotalPedido" readonly>
+                    </div>
+                </div>
+
+               
+
+                <h3>Itens do Pedido</h3>
+                <div class="input-container-produto-group">
+                    <div class="input-container-produto-descricao">
+                        <label for="produtoPedido">Produto:</label>
+                        <select id="produtoPedido">
+                            <!-- As opções de produto serão carregadas dinamicamente -->
+                        </select>
+                    </div>
+                    <div class="input-container-produto-qtde">
+                        <label for="qtdeProdutoPedido">Quantidade:</label>
+                        <input type="number" id="qtdeProdutoPedido" value="1">
+                    </div>
+                </div>
+
+                <button type="button" class="btn-add-produto-pedido" id="btn-add-produto-pedido">Adicionar Produto</button>
+
+                <div class="itens-pedido-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Código</th>
+                                <th>Descrição</th>
+                                <th>Qtde</th>
+                                <th>Valor Unitário</th>
+                                <th>Valor Total</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="itens-pedido">
+                            <!-- Os itens serão adicionados aqui -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pedido-footer">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/contato.js"></script>
+    <script src="./js/produtoClasse.js"></script>
+    <script src="./js/contas.js"></script>
+    <script src="./js/pedido.js"></script>
+    <script src="./js/relatorio.js"></script>
+</body>
+
+</html>
